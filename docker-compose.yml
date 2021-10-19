@@ -5,7 +5,7 @@ services:
     image: ghcr.io/ozon-edu-csharp-2021/bekzhan/merchandise-service:main
     build:
       context: .
-      dockerfile: MerchandiseService/Dockerfile
+      dockerfile: src/MerchandiseService/Dockerfile
   supply-service:
     image: ghcr.io/ozon-edu-csharp-2021/supply-service:main
   emailing-service:
