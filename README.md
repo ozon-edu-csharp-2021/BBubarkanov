@@ -1,2 +1,2 @@
-# BBubarkanov
+# BBubakanov
 Бубаканов Бекжан
