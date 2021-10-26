@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MerchandiseService.Api", "src\MerchandiseService.Api\MerchandiseService.Api.csproj", "{A65D27AC-85CF-48DB-8435-F760DC7A0A71}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployment", "deployment", "{F248BB63-5C57-4092-9683-25875E7CF977}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{F248BB63-5C57-4092-9683-25875E7CF977}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{DF908CEE-09B9-42D0-9910-0226BA1B5398}"
 EndProject
