@@ -14,18 +14,18 @@ namespace MerchandiseService.HttpClient
             _httpClient = httpClient;
         }
 
-        public async Task<Merch> GetMerch(CancellationToken token)
+        public async Task<MerchResponse> GetMerch(CancellationToken token)
         {
             using var response = await _httpClient.GetAsync("api/v1/merch", token);
             var body = await response.Content.ReadAsStringAsync(token);
-            return JsonSerializer.Deserialize<Merch>(body);
+            return JsonSerializer.Deserialize<MerchResponse>(body);
         }
 
-        public async Task<MerchInfo> GetMerchInfo(CancellationToken token)
+        public async Task<MerchInfoResponse> GetMerchInfo(CancellationToken token)
         {
             using var response = await _httpClient.GetAsync("api/v1/merch/info", token);
             var body = await response.Content.ReadAsStringAsync(token);
-            return JsonSerializer.Deserialize<MerchInfo>(body);
+            return JsonSerializer.Deserialize<MerchInfoResponse>(body);
         }
     }
 }

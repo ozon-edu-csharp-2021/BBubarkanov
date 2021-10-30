@@ -10,9 +10,11 @@ namespace MerchandiseService.Api.Controllers
     public class MerchController : ControllerBase
     {
         [HttpGet]
-        public Task<ActionResult<Merch>> Get() => throw new NotImplementedException();
+        public Task<ActionResult<MerchResponse>> Get(MerchRequest request) 
+            => throw new NotImplementedException();
 
         [HttpGet("info")]
-        public Task<ActionResult<MerchInfo>> Info() => throw new NotImplementedException();
+        public Task<ActionResult<MerchInfoResponse>> Info(MerchInfoRequest request) 
+            => throw new NotImplementedException();
     }
 }

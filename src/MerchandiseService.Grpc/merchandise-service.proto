@@ -2,15 +2,19 @@ syntax = "proto3";
 option csharp_namespace = "MerchandiseService.Grpc";
 package MerchandiseService;
 
-import "google/protobuf/empty.proto";
-
 service MerchGrpc {
-  rpc GetMerch(google.protobuf.Empty) returns (Merch);
-  rpc GetMerchInfo(google.protobuf.Empty) returns (MerchInfo);
+  rpc GetMerch(MerchRequest) returns (MerchResponse);
+  rpc GetMerchInfo(MerchInfoRequest) returns (MerchInfoResponse);
 }
 
-message Merch {
+message MerchRequest {
 }
 
-message MerchInfo {
+message MerchResponse {
+}
+
+message MerchInfoRequest{
+}
+
+message MerchInfoResponse {
 }

@@ -1,4 +1,4 @@
 ﻿namespace MerchandiseService.Api.Models
 {
-    public class Merch { }
+    public record MerchRequest;
 }
