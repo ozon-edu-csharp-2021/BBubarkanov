@@ -5,12 +5,22 @@ services:
     image: ghcr.io/ozon-edu-csharp-2021/bekzhan/merchandise-service:main
     build:
       context: .
-      dockerfile: src/MerchandiseService/Dockerfile
+      dockerfile: src/MerchandiseService.Api/Dockerfile
+    ports:
+      - '5000:80'
   supply-service:
     image: ghcr.io/ozon-edu-csharp-2021/supply-service:main
+    ports:
+      - '5010:80'
   emailing-service:
     image: ghcr.io/ozon-edu-csharp-2021/emailing-service:main
+    ports:
+      - '5020:80'
   employees-service:
     image: ghcr.io/ozon-edu-csharp-2021/employees-service:main
+    ports:
+      - '5030:80'
   stock-api:
     image: ghcr.io/ozon-edu-csharp-2021/stock-api:main
+    ports:
+      - '5040:80'
