@@ -8,11 +8,4 @@
       <PackageReference Include="MediatR" Version="9.0.0" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="AggregateModels\EmployeeAggregate" />
-      <Folder Include="Events" />
-      <Folder Include="Exceptions" />
-      <Folder Include="Services" />
-    </ItemGroup>
-
 </Project>
