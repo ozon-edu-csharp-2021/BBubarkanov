@@ -6,7 +6,7 @@ namespace MerchandiseService.HttpClient
 {
     public interface IMerchandiseHttpClient
     {
-        Task<MerchResponse> GetMerch(CancellationToken token);
-        Task<MerchInfoResponse> GetMerchInfo(CancellationToken token);
+        Task<RequestStatusOutputModel> GetMerch(CancellationToken token);
+        Task<EmployeeRequestsOutputModel> GetMerchInfo(CancellationToken token);
     }
 }
